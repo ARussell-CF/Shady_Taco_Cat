@@ -53,9 +53,26 @@
     <!-- ======= Main Section ======= -->
     <main id="content" class="flex-shrink-0">
         <div class="container col-xxl-8 px-4 py-5 mt-5">
-                <h1>App UI Goes here</h1>
-                <input id="message" placeholder="Enter A Message" >
-                <button id=btnSubmit class="btn btn-dark">Display Message</button>
+            <div class="row row-cols-1">
+                <div class="col col-md-6">
+                    <h1>TacoCat: A Coding Project</h1>
+                    <p>This project reverses a string using a decremented for loop. Add more TacoCat specific text</p>
+                </div>
+                <div class="col col-md-6">
+                    <h5 class="border-bottom border-danger">Enter a string to reverse</h5>
+                    <form class="row gx-3 gy-2">
+                        <div class="col-12">
+                            <input type="text" id="userString" class="form-control" required
+                                placeholder="Enter 2 or more characters" />
+                        </div>
+                        <div class="col-12">
+                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse!</button>
+                        </div>
+                    </form>
+                    <hr />
+                    <p id="results"></p>
+                </div>
+            </div>
         </div>
     </main>
     <!-- ======= Footer Section ======= -->
